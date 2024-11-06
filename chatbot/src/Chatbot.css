@@ -1,0 +1,38 @@
+.chatbot {
+    width: 300px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .chat-history {
+    flex: 1;
+    overflow-y: auto;
+    margin-bottom: 10px;
+  }
+  
+  .message {
+    padding: 8px;
+    margin: 4px 0;
+  }
+  
+  .user {
+    text-align: right;
+    background-color: #cce5ff;
+  }
+  
+  .bot {
+    text-align: left;
+    background-color: #e2e3e5;
+  }
+  
+  .chat-input {
+    display: flex;
+    gap: 8px;
+  }
+  
+  input {
+    flex: 1;
+  }
+  
