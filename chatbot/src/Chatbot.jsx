@@ -1,3 +1,4 @@
+// Chatbot.jsx
 import React, { useState } from 'react';
 import axios from 'axios';
 import './Chatbot.css';
@@ -17,6 +18,8 @@ const Chatbot = () => {
         setMessages((prevMessages) => [...prevMessages, botMessage]);
       } catch (error) {
         console.error("Error fetching response:", error);
+        const errorMessage = { sender: "bot", text: "Sorry, there was an error." };
+        setMessages((prevMessages) => [...prevMessages, errorMessage]);
       }
 
       setInput("");
